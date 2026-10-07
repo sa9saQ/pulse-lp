@@ -33,8 +33,8 @@ export default function CTA() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4, delay: 0.15, ease: [0, 0, 0.2, 1] }}
         >
-          <a
-            href="#"
+          <span
+            role="note"
             className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold transition-all"
             style={{
               borderRadius: "8px",
@@ -58,7 +58,13 @@ export default function CTA() {
             }}
           >
             無料で始める
-          </a>
+          </span>
+          <p
+            className="mt-3 text-xs"
+            style={{ color: "var(--text-muted)" }}
+          >
+            サンプルのため申し込みはできません
+          </p>
         </motion.div>
 
         <motion.p

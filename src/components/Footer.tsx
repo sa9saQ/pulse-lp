@@ -40,9 +40,8 @@ export default function Footer() {
         {/* Links */}
         <div className="flex items-center gap-6">
           {["利用規約", "プライバシー", "お問い合わせ"].map((label) => (
-            <a
+            <span
               key={label}
-              href="#"
               className="text-xs font-medium transition-colors"
               style={{
                 color: "var(--text-muted)",
@@ -57,7 +56,7 @@ export default function Footer() {
               }
             >
               {label}
-            </a>
+            </span>
           ))}
         </div>
 
@@ -69,6 +68,12 @@ export default function Footer() {
           &copy; 2026 Pulse Inc.
         </p>
       </div>
+      <p
+        className="mt-4 px-6 text-center text-xs"
+        style={{ color: "var(--text-muted)" }}
+      >
+        ※ このページは制作サンプルです。架空のサービスで、実在しません。
+      </p>
     </footer>
   );
 }
